@@ -1,20 +1,23 @@
 # FreshTurn: Airbnb Cleaning & Turnover Company
 
-A website and full business plan for a short-term rental **property care** company: cleaning, linens, restocking and inspections between guests. The company does not manage the Airbnb listing itself.
+Everything needed to start an Airbnb cleaning business that uses a team of trusted independent cleaners, paid per job. The company cleans properties between guests; it does not manage the Airbnb listings.
 
 | File | What it is |
 |---|---|
-| `index.html`, `styles.css`, `script.js` | One-page marketing website with services, pricing, a live price estimator, a walkthrough booking form and an FAQ |
-| `BUSINESS_PLAN.md` | Full business plan: market, pricing, operations, staffing, unit economics, startup costs, 3-year projections, risks and a 90-day launch roadmap |
+| `index.html`, `styles.css`, `script.js` | The website: services, pricing, an instant price estimator, a booking form and an FAQ |
+| `BUSINESS_PLAN.md` | The business plan: how it works, pricing, cleaner pay, finding clients, money, risks and a launch checklist |
+| `templates/cleaner-agreement.md` | Agreement to sign with each cleaner |
+| `templates/client-agreement.md` | Agreement to sign with each Airbnb host |
+| `templates/turnover-checklist.md` | The checklist cleaners follow at every clean |
+| `templates/outreach-scripts.md` | Messages for your cleaners, friends, Facebook groups, hosts and partners |
 
-## Viewing the site
+## Putting the website live (free)
 
-Open `index.html` in a browser. No build step is needed.
+1. **Fill in your details** in `index.html`: business name, email (`hello@freshturn.example`), phone number and area.
+2. **Make the form send you emails.** Sign up free at [formspree.io](https://formspree.io), create a form, then in `index.html` change `<form class="contact" id="contact">` to `<form class="contact" id="contact" action="https://formspree.io/f/YOUR_ID" method="POST">`, and delete the "Contact form" block at the bottom of `script.js`.
+3. **Publish it.** Either option works:
+   - **Netlify (easiest):** go to [app.netlify.com/drop](https://app.netlify.com/drop) and drag this folder onto the page. You get a free web address straight away.
+   - **GitHub Pages:** in this repo go to *Settings → Pages*, choose the branch, and save.
+4. **Optional:** buy a domain (e.g. `freshturncleaning.com`, about $15/year) and connect it in Netlify or GitHub Pages settings.
 
-To deploy, drag the folder onto [Netlify Drop](https://app.netlify.com/drop), or enable GitHub Pages for this repo.
-
-## Before going live
-
-- Replace the placeholder name (**FreshTurn**), email (`hello@freshturn.example`) and phone number in `index.html`.
-- Adjust prices in **both** the pricing table in `index.html` and the `BASE` / `LINENS` arrays in `script.js`.
-- Connect the contact form to a real backend (e.g. Formspree or Netlify Forms). It currently only shows a thank-you message.
+If you change prices, update **both** the pricing table in `index.html` and the `BASE` / `LINENS` numbers in `script.js`.
