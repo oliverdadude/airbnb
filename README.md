@@ -6,9 +6,15 @@ Everything needed to start an Airbnb cleaning business that uses a team of trust
 |---|---|
 | `index.html`, `styles.css`, `script.js` | The website: services, pricing, an instant price estimator, a booking form and an FAQ |
 | `BUSINESS_PLAN.md` | The business plan: how it works, pricing, cleaner pay, finding clients, money, risks and a launch checklist |
+| `system/FreshTurn_Operations.xlsx` | **The system.** Cleans log, stock and reorder alerts, purchases and recharges, damage claims, invoices, cleaner pay, expenses, tax and VAT tracking, price calculator. Opens in Excel or Google Sheets |
+| `system/OPERATIONS_MANUAL.md` | How to run each part of the business day to day, week to week and month to month |
+| `RESEARCH.md` | Bath market, prices, supplies, damage claims, UK legal/tax/insurance, short-let rules and rubbish, with sources |
 | `templates/cleaner-agreement.md` | Agreement to sign with each cleaner |
 | `templates/client-agreement.md` | Agreement to sign with each Airbnb host |
 | `templates/turnover-checklist.md` | The checklist cleaners follow at every clean |
+| `templates/property-onboarding.md` | Form for the first visit to a new property |
+| `templates/messages.md` | Ready-to-send messages for hosts and cleaners |
+| `templates/coshh-risk-assessment.md` | Health & safety assessment for cleaning products |
 | `templates/outreach-scripts.md` | Messages for your cleaners, friends, Facebook groups, hosts and partners |
 
 ## Putting the website live (free)
