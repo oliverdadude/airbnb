@@ -2,22 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>FreshTurn | Airbnb Cleaning & Turnover Services</title>
-  <meta name="description" content="FreshTurn handles cleaning, linens, restocking and inspections between every guest, so short-term rental hosts get 5-star reviews without lifting a finger.">
+  <meta name="description" content="FreshTurn cleans, changes the beds, restocks and photographs your Airbnb between every guest. Checkout at 11, spotless by 4.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- Icon set (line icons, used with <svg><use href="#i-name"/></svg>) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-spray" viewBox="0 0 24 24"><path d="M9 9h6v2.5l2 2V21H7v-7.5l2-2z"/><path d="M10 9V5.5h4.5L18 4"/><path d="M14 5.5V3h-3"/><path d="M20 7h1.5M20 10h1.5M19.5 4.5l1-1"/></symbol>
+    <symbol id="i-bed" viewBox="0 0 24 24"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.3 7 12 12l8.7-5"/><path d="M12 22V12"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M11 3l1.8 5.2L18 10l-5.2 1.8L11 17l-1.8-5.2L4 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 8v5"/><path d="M12 16.5v.01"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
+    <symbol id="i-arrows" viewBox="0 0 24 24"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></symbol>
+    <symbol id="logo" viewBox="0 0 32 32"><rect width="32" height="32" rx="9" fill="currentColor" stroke="none"/><path d="M23.5 11.5A9 9 0 1 0 25 17" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/><path d="M24.5 6.5v5.5H19" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 16.5l3 3 5.5-6" fill="none" stroke="#5FE0A4" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+
+    <!-- Illustrated bedroom used by the before/after slider -->
+    <symbol id="room" viewBox="0 0 800 500">
+      <rect width="800" height="330" fill="#E6ECF3"/>
+      <rect y="330" width="800" height="170" fill="#D8C4A8"/>
+      <path d="M0 372h800M0 418h800M0 464h800M120 330v42M380 372v46M640 330v42M250 418v46M560 418v46" stroke="#CBB596" stroke-width="2"/>
+      <rect y="324" width="800" height="9" fill="#F7F9FB"/>
+      <rect x="540" y="58" width="180" height="150" rx="4" fill="#CFE3F2" stroke="#FFFFFF" stroke-width="10"/>
+      <path d="M630 58v150M540 133h180" stroke="#FFFFFF" stroke-width="6"/>
+      <ellipse cx="330" cy="440" rx="240" ry="38" fill="#C3D1DF"/>
+      <rect x="150" y="140" width="340" height="170" rx="16" fill="#1E3A5F"/>
+      <rect x="140" y="292" width="360" height="56" rx="8" fill="#2B4C75"/>
+      <rect x="140" y="346" width="12" height="22" fill="#1E3A5F"/><rect x="488" y="346" width="12" height="22" fill="#1E3A5F"/>
+      <rect x="30" y="252" width="94" height="96" rx="6" fill="#B78C60"/>
+      <path d="M38 300h78" stroke="#A47A50" stroke-width="3"/><circle cx="77" cy="324" r="4" fill="#8E6842"/>
+      <rect x="74" y="200" width="6" height="52" fill="#8E6842"/>
+      <path d="M50 168h54l10 36H40z" fill="#F1D8A6"/>
+    </symbol>
+  </defs>
+</svg>
+
 <header class="nav" id="top">
   <div class="container nav-inner">
-    <a href="#top" class="logo"><span class="logo-mark">✦</span> FreshTurn</a>
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <a href="#top" class="logo"><svg class="logo-mark"><use href="#logo"/></svg>FreshTurn</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><svg class="ic"><use href="#i-menu"/></svg></button>
     <nav class="nav-links">
       <a href="#services">Services</a>
+      <a href="#results">Results</a>
       <a href="#how">How it works</a>
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
@@ -30,47 +67,51 @@
   <!-- HERO -->
   <section class="hero">
     <div class="container hero-grid">
-      <div>
-        <p class="eyebrow">Airbnb &amp; short-term rental turnovers</p>
-        <h1>Guest-ready between every stay. <span class="accent">Every time.</span></h1>
-        <p class="lead">We handle the cleaning, linens, restocking and inspections between bookings, so you can stop worrying about checkout day and keep the 5-star reviews coming.</p>
+      <div class="hero-copy">
+        <p class="eyebrow">Airbnb &amp; short-term rental cleaning</p>
+        <h1>Checkout at 11.<br><span class="hl">Spotless by 4.</span></h1>
+        <p class="lead">FreshTurn cleans, changes the beds, restocks and photographs your place between every guest. You get a photo report. Your next guest gets a five-star stay.</p>
         <div class="hero-cta">
-          <a href="#quote" class="btn">Get your instant estimate</a>
-          <a href="#how" class="btn btn-ghost">See how it works</a>
+          <a href="#quote" class="btn">Get your instant price</a>
+          <a href="#how" class="btn btn-ghost">How it works</a>
         </div>
         <ul class="hero-points">
-          <li>✓ Synced to your booking calendar</li>
-          <li>✓ Photo report after every clean</li>
-          <li>✓ Same-day turnovers</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Booked automatically from your calendar</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Photo report after every clean</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Fully insured, backup cleaner always ready</li>
         </ul>
       </div>
-      <div class="hero-card" aria-hidden="true">
-        <div class="report">
-          <div class="report-head">
-            <span class="dot"></span>
-            <strong>Turnover complete</strong>
-            <span class="time">2:47 PM</span>
-          </div>
-          <p class="report-prop">Ocean View Loft · 2 bed / 1 bath</p>
-          <ul class="report-list">
-            <li><span>✓</span> Full clean, all rooms</li>
-            <li><span>✓</span> Fresh linens &amp; towels (2 beds)</li>
-            <li><span>✓</span> Restocked coffee, toiletries, paper</li>
-            <li><span>✓</span> 24 photos uploaded</li>
-            <li class="warn"><span>!</span> Bedside lamp bulb out, replaced</li>
-          </ul>
-          <div class="report-foot">Ready for 4:00 PM check-in</div>
+
+      <!-- Animated turnover report. It is fully "complete" in the HTML; script.js replays it. -->
+      <div class="report" id="report" aria-label="Example turnover report">
+        <div class="report-head">
+          <span class="live"><span class="pulse"></span><span id="reportStatus">Turnover complete</span></span>
+          <span class="clock" id="reportClock">14:47</span>
         </div>
+        <p class="report-prop">Ocean View Loft · 2 bed / 1 bath</p>
+        <div class="window" aria-hidden="true">
+          <span>11:00 checkout</span>
+          <div class="window-bar"><div class="window-fill" id="reportBar"></div></div>
+          <span>16:00 check-in</span>
+        </div>
+        <ul class="report-list" id="reportList">
+          <li class="done" data-time="11:42"><span class="tick"><svg><use href="#i-check"/></svg></span>Kitchen &amp; bathroom deep-wiped</li>
+          <li class="done" data-time="12:31"><span class="tick"><svg><use href="#i-check"/></svg></span>Fresh linens &amp; towels, 2 beds</li>
+          <li class="done" data-time="13:18"><span class="tick"><svg><use href="#i-check"/></svg></span>Restocked coffee, toiletries, paper</li>
+          <li class="done warn" data-time="13:56"><span class="tick"><svg><use href="#i-alert"/></svg></span>Bedside bulb out, replaced</li>
+          <li class="done" data-time="14:47"><span class="tick"><svg><use href="#i-check"/></svg></span>24 photos sent to host</li>
+        </ul>
+        <div class="report-foot" id="reportFoot">Ready for 16:00 check-in</div>
       </div>
     </div>
   </section>
 
-  <!-- TRUST BAR -->
+  <!-- PROMISES -->
   <section class="stats">
     <div class="container stats-grid">
-      <div><strong>2–4 hrs</strong><span>typical turnover window</span></div>
+      <div><strong>11→4</strong><span>Same-day turnovers, every day</span></div>
       <div><strong>100%</strong><span>of cleans photo-verified</span></div>
-      <div><strong>7 days</strong><span>a week, including holidays</span></div>
+      <div><strong>24 hr</strong><span>re-clean guarantee</span></div>
       <div><strong>$0</strong><span>setup fees or contracts</span></div>
     </div>
   </section>
@@ -78,83 +119,180 @@
   <!-- SERVICES -->
   <section id="services" class="section">
     <div class="container">
-      <p class="eyebrow center">What we do</p>
-      <h2 class="center">Everything that happens between guests</h2>
-      <p class="section-lead center">You run the listing. We run the property side. Pick the services you need, or let us handle all of it.</p>
-      <div class="cards">
-        <article class="card">
-          <div class="icon">🧽</div>
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="eyebrow">What we do</p>
+          <h2>Everything that happens between guests</h2>
+        </div>
+        <p class="section-lead">You run the listing. We run the property side. Pick the services you need, or let us handle all of it.</p>
+      </div>
+      <div class="services">
+        <article class="service" data-reveal>
+          <span class="service-icon"><svg class="ic"><use href="#i-spray"/></svg></span>
           <h3>Turnover cleaning</h3>
-          <p>Hotel-standard clean after every checkout using a room-by-room checklist built for short-term rentals.</p>
+          <p>Hotel-standard clean after every checkout, following a room-by-room checklist built for short-term rentals.</p>
         </article>
-        <article class="card">
-          <div class="icon">🛏️</div>
+        <article class="service" data-reveal>
+          <span class="service-icon"><svg class="ic"><use href="#i-bed"/></svg></span>
           <h3>Linen &amp; laundry</h3>
-          <p>Sheets and towels washed and changed every visit, or use our own hotel-quality linen sets so there's no laundry for you at all.</p>
+          <p>Sheets and towels washed and changed every visit, or use our hotel-quality linen sets and forget laundry entirely.</p>
         </article>
-        <article class="card">
-          <div class="icon">🧴</div>
+        <article class="service" data-reveal>
+          <span class="service-icon"><svg class="ic"><use href="#i-box"/></svg></span>
           <h3>Restocking</h3>
           <p>Toiletries, coffee, paper goods and cleaning supplies topped up every visit, billed at cost.</p>
         </article>
-        <article class="card">
-          <div class="icon">📸</div>
-          <h3>Inspections &amp; photo reports</h3>
-          <p>Timestamped photos of every room, plus damage and missing-item reports to back up your claims.</p>
+        <article class="service" data-reveal>
+          <span class="service-icon"><svg class="ic"><use href="#i-camera"/></svg></span>
+          <h3>Photo reports</h3>
+          <p>Timestamped photos of every room, plus damage and missing-item reports you can use in Airbnb claims.</p>
         </article>
-        <article class="card">
-          <div class="icon">🔧</div>
-          <h3>Maintenance coordination</h3>
-          <p>Small fixes on the spot. Bigger jobs flagged to you and booked with trusted local trades.</p>
+        <article class="service" data-reveal>
+          <span class="service-icon"><svg class="ic"><use href="#i-wrench"/></svg></span>
+          <h3>Small fixes</h3>
+          <p>Bulbs, batteries and loose fittings sorted on the spot. Bigger jobs flagged to you straight away.</p>
         </article>
-        <article class="card">
-          <div class="icon">✨</div>
-          <h3>Deep cleans &amp; resets</h3>
-          <p>Seasonal deep cleans, carpet and oven cleans, and full setup for new listings before the first guest.</p>
+        <article class="service" data-reveal>
+          <span class="service-icon"><svg class="ic"><use href="#i-sparkle"/></svg></span>
+          <h3>Deep cleans &amp; setup</h3>
+          <p>Seasonal deep cleans, ovens and fridges, and full setup for new listings before the first guest arrives.</p>
         </article>
       </div>
-      <p class="note center">We don't manage your listing, pricing or guest messages. You stay in control of your Airbnb; we make sure the property is perfect.</p>
+      <p class="note">We don't manage your listing, pricing or guest messages. You stay in control of your Airbnb. We make sure the property is perfect.</p>
+    </div>
+  </section>
+
+  <!-- BEFORE / AFTER
+       To use real photos, replace each <svg class="ba-art">…</svg> with
+       <img class="ba-art" src="photos/before.jpg" alt="…"> and photos/after.jpg (same size, landscape). -->
+  <section id="results" class="section alt">
+    <div class="container results-grid">
+      <div data-reveal>
+        <p class="eyebrow">The difference</p>
+        <h2>From checkout chaos to guest-ready</h2>
+        <p class="section-lead">Guests leave. We reset everything to match your listing photos: beds made tight, towels folded, surfaces clear, supplies topped up.</p>
+        <p class="hint"><svg class="ic"><use href="#i-arrows"/></svg>Drag the slider to compare</p>
+      </div>
+      <div class="ba" id="ba" style="--pos: 50%" data-reveal>
+        <div class="ba-layer ba-after">
+          <svg class="ba-art" viewBox="0 0 800 500" role="img" aria-label="Illustration: the bedroom after a FreshTurn clean, bed made and towels folded">
+            <use href="#room"/>
+            <circle cx="77" cy="196" r="70" fill="#FFF3D1" opacity=".55"/>
+            <path d="M50 168h54l10 36H40z" fill="#F7E2B6"/>
+            <rect x="150" y="236" width="340" height="80" rx="10" fill="#FFFFFF" stroke="#D5DEE8" stroke-width="2"/>
+            <rect x="150" y="236" width="340" height="20" rx="8" fill="#EEF3F8"/>
+            <rect x="172" y="196" width="128" height="46" rx="18" fill="#FFFFFF" stroke="#D5DEE8" stroke-width="2"/>
+            <rect x="340" y="196" width="128" height="46" rx="18" fill="#FFFFFF" stroke="#D5DEE8" stroke-width="2"/>
+            <rect x="392" y="270" width="78" height="15" rx="4" fill="#8FD6B5"/>
+            <rect x="398" y="256" width="66" height="14" rx="4" fill="#CDEFDD"/>
+            <rect x="52" y="226" width="22" height="26" rx="4" fill="#E9EEF3"/>
+            <path d="M63 226c-10-14-4-26 0-30 4 4 10 16 0 30zM63 226c-14-6-16-18-14-22 6 0 16 6 14 22zM63 226c14-6 16-18 14-22-6 0-16 6-14 22z" fill="#3E9B6E"/>
+            <g fill="#2BB673"><path d="M540 260l5 14 14 5-14 5-5 14-5-14-14-5 14-5z"/><path d="M110 120l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/><path d="M510 150l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/></g>
+          </svg>
+          <span class="ba-tag ba-tag-after">After</span>
+        </div>
+        <div class="ba-layer ba-before" aria-hidden="true">
+          <svg class="ba-art" viewBox="0 0 800 500">
+            <use href="#room"/>
+            <path d="M150 252q40-26 80-2t80-8 90 12 90-16l6 82q-66 14-134-6t-140 10-76-10z" fill="#EDF0F4" stroke="#C3CCD7" stroke-width="2"/>
+            <path d="M200 270q30 14 60 0M300 286q40-18 80 4M420 268q30 16 50-2" stroke="#C3CCD7" stroke-width="3" fill="none"/>
+            <path d="M490 262q22 30 10 96l-34 6q12-50-2-86z" fill="#EDF0F4" stroke="#C3CCD7" stroke-width="2"/>
+            <rect x="182" y="204" width="122" height="44" rx="18" fill="#E7EAEE" stroke="#C3CCD7" stroke-width="2" transform="rotate(-14 243 226)"/>
+            <rect x="560" y="392" width="112" height="40" rx="16" fill="#E7EAEE" stroke="#C3CCD7" stroke-width="2" transform="rotate(9 616 412)"/>
+            <path d="M230 398q20-22 48-8t40-4 34 18q-20 22-60 18t-62-24z" fill="#9FB0C2"/>
+            <rect x="46" y="230" width="16" height="22" rx="3" fill="#FFFFFF" stroke="#AEB9C6" stroke-width="2"/>
+            <rect x="88" y="236" width="14" height="16" rx="3" fill="#C98A5A"/>
+            <circle cx="430" cy="460" r="9" fill="#F5F5F5" stroke="#B9C2CC" stroke-width="2"/>
+            <circle cx="458" cy="470" r="7" fill="#F5F5F5" stroke="#B9C2CC" stroke-width="2"/>
+            <rect x="680" y="300" width="60" height="44" rx="6" fill="#6B7C90" transform="rotate(-6 710 322)"/>
+            <rect width="800" height="500" fill="#13233A" opacity=".08"/>
+          </svg>
+          <span class="ba-tag">Before</span>
+        </div>
+        <div class="ba-handle" aria-hidden="true"><span><svg class="ic"><use href="#i-arrows"/></svg></span></div>
+        <input class="ba-range" id="baRange" type="range" min="0" max="100" value="50" aria-label="Compare before and after">
+      </div>
     </div>
   </section>
 
   <!-- HOW IT WORKS -->
-  <section id="how" class="section alt">
+  <section id="how" class="section">
     <div class="container">
-      <p class="eyebrow center">How it works</p>
-      <h2 class="center">Set up once, then forget about checkout day</h2>
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="eyebrow">How it works</p>
+          <h2>Set up once, then forget about checkout day</h2>
+        </div>
+        <p class="section-lead">Most hosts are fully set up within a week of their first message.</p>
+      </div>
       <ol class="steps">
-        <li>
+        <li data-reveal>
           <span class="step-num">1</span>
           <h3>Free walkthrough</h3>
-          <p>We visit the property, learn your standards and build a custom checklist and supply list.</p>
+          <p>We visit the property, learn your standards and photograph exactly how you want it left.</p>
         </li>
-        <li>
+        <li data-reveal>
           <span class="step-num">2</span>
           <h3>Connect your calendar</h3>
-          <p>Share your Airbnb / VRBO calendar link. Every new booking automatically schedules a clean.</p>
+          <p>Share your Airbnb or VRBO calendar link. Every new booking schedules a clean automatically.</p>
         </li>
-        <li>
+        <li data-reveal>
           <span class="step-num">3</span>
           <h3>We turn it over</h3>
-          <p>Your dedicated cleaner (with a backup who knows your place) cleans, restocks and inspects between checkout and check-in.</p>
+          <p>Your regular cleaner, with a backup who knows your place, cleans, restocks and checks everything.</p>
         </li>
-        <li>
+        <li data-reveal>
           <span class="step-num">4</span>
           <h3>You get the report</h3>
-          <p>Photos, notes and any issues land in your inbox. One simple invoice at the end of the month.</p>
+          <p>Photos and notes land in your inbox. One simple invoice at the end of the month.</p>
         </li>
       </ol>
     </div>
   </section>
 
-  <!-- PRICING -->
-  <section id="pricing" class="section">
+  <!-- REVIEWS
+       Hidden until you have real reviews. To show it: paste genuine reviews below
+       (with the host's permission) and delete the word "hidden" on the next line. -->
+  <section id="reviews" class="section alt" hidden>
     <div class="container">
-      <p class="eyebrow center">Pricing</p>
-      <h2 class="center">Simple, per-turnover pricing</h2>
-      <p class="section-lead center">Pay per clean. No contracts, no setup fees. Most hosts build our fee into their Airbnb cleaning fee.</p>
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Hosts on FreshTurn</p>
+          <h2>What our hosts say</h2>
+        </div>
+      </div>
+      <div class="reviews">
+        <figure class="review">
+          <div class="stars" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <blockquote>[Paste a real review here.]</blockquote>
+          <figcaption><strong>[Host first name]</strong> · [Area], [number] listings</figcaption>
+        </figure>
+        <figure class="review">
+          <div class="stars" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <blockquote>[Paste a real review here.]</blockquote>
+          <figcaption><strong>[Host first name]</strong> · [Area], [number] listings</figcaption>
+        </figure>
+        <figure class="review">
+          <div class="stars" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <blockquote>[Paste a real review here.]</blockquote>
+          <figcaption><strong>[Host first name]</strong> · [Area], [number] listings</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
 
-      <div class="price-table-wrap">
+  <!-- PRICING -->
+  <section id="pricing" class="section alt">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="eyebrow">Pricing</p>
+          <h2>Simple, per-clean pricing</h2>
+        </div>
+        <p class="section-lead">No contracts and no setup fees. Our price usually fits inside the cleaning fee your guests already pay.</p>
+      </div>
+
+      <div class="price-table-wrap" data-reveal>
         <table class="price-table">
           <thead>
             <tr><th>Property size</th><th>Turnover clean</th><th>+ Our linens</th><th>Deep clean</th></tr>
@@ -168,10 +306,10 @@
           </tbody>
         </table>
       </div>
-      <p class="note center">Extra bathrooms +$20 each · Hot tub check +$25 · Same-day rush (&lt;4 hrs notice) +25% · Restocking billed at cost + 10%</p>
+      <p class="note">Extra bathrooms +$20 each · Hot tub check +$25 · Same-day rush (under 4 hrs notice) +25% · Restocking at cost + 10%</p>
 
       <div class="plans">
-        <div class="plan">
+        <div class="plan" data-reveal>
           <h3>Pay as you go</h3>
           <p class="plan-price">Standard rates</p>
           <ul>
@@ -180,7 +318,7 @@
             <li>Add services any time</li>
           </ul>
         </div>
-        <div class="plan featured">
+        <div class="plan featured" data-reveal>
           <span class="badge">Most popular</span>
           <h3>Full Care</h3>
           <p class="plan-price">5% off every clean</p>
@@ -191,13 +329,13 @@
             <li>Quarterly deep clean at 20% off</li>
           </ul>
         </div>
-        <div class="plan">
+        <div class="plan" data-reveal>
           <h3>Portfolio</h3>
           <p class="plan-price">Custom pricing</p>
           <ul>
             <li>5+ properties or co-hosts</li>
-            <li>Dedicated account manager</li>
-            <li>Consolidated reporting</li>
+            <li>One point of contact</li>
+            <li>Combined monthly reporting</li>
           </ul>
         </div>
       </div>
@@ -205,15 +343,15 @@
   </section>
 
   <!-- QUOTE / CALCULATOR -->
-  <section id="quote" class="section alt">
+  <section id="quote" class="section">
     <div class="container quote-grid">
-      <div>
-        <p class="eyebrow">Instant estimate</p>
+      <div data-reveal>
+        <p class="eyebrow">Instant price</p>
         <h2>What would it cost for your place?</h2>
-        <p class="section-lead">Get a ballpark in seconds, then send us your details for a free walkthrough.</p>
+        <p class="section-lead">Get a ballpark in seconds, then book a free walkthrough.</p>
 
         <form class="calc" id="calc">
-          <label>Bedrooms
+          <label for="beds">Bedrooms
             <select id="beds">
               <option value="0">Studio</option>
               <option value="1">1 bedroom</option>
@@ -222,7 +360,7 @@
               <option value="4">4+ bedrooms</option>
             </select>
           </label>
-          <label>Bathrooms
+          <label for="baths">Bathrooms
             <select id="baths">
               <option value="1" selected>1</option>
               <option value="2">2</option>
@@ -230,7 +368,7 @@
               <option value="4">4+</option>
             </select>
           </label>
-          <label>Turnovers per month
+          <label for="turns" class="span-2">Cleans per month
             <input type="number" id="turns" min="1" max="31" value="8">
           </label>
           <label class="check"><input type="checkbox" id="linens"> Use our linen sets</label>
@@ -238,23 +376,26 @@
         </form>
 
         <div class="calc-result" aria-live="polite">
-          <div><span>Per turnover</span><strong id="perTurn">$135</strong></div>
+          <div><span>Per clean</span><strong id="perTurn">$135</strong></div>
           <div><span>Estimated monthly</span><strong id="perMonth">$1,080</strong></div>
         </div>
       </div>
 
-      <form class="contact" id="contact">
+      <form class="contact" id="contact" data-reveal>
         <h3>Book a free walkthrough</h3>
-        <label>Name<input type="text" name="name" required></label>
-        <label>Email<input type="email" name="email" required></label>
-        <label>Phone<input type="tel" name="phone"></label>
-        <label>Property address or area<input type="text" name="address"></label>
-        <label>Number of properties
-          <select name="properties">
+        <p class="contact-sub">We reply within one business day.</p>
+        <label for="f-name">Name<input type="text" id="f-name" name="name" autocomplete="name" required></label>
+        <div class="row-2">
+          <label for="f-email">Email<input type="email" id="f-email" name="email" autocomplete="email" required></label>
+          <label for="f-phone">Phone<input type="tel" id="f-phone" name="phone" autocomplete="tel"></label>
+        </div>
+        <label for="f-address">Property address or area<input type="text" id="f-address" name="address"></label>
+        <label for="f-props">Number of properties
+          <select id="f-props" name="properties">
             <option>1</option><option>2–4</option><option>5–10</option><option>10+</option>
           </select>
         </label>
-        <label>Anything we should know?<textarea name="message" rows="3"></textarea></label>
+        <label for="f-msg">Anything we should know?<textarea id="f-msg" name="message" rows="3"></textarea></label>
         <button type="submit" class="btn btn-block">Request walkthrough</button>
         <p class="form-msg" id="formMsg" role="status"></p>
       </form>
@@ -262,34 +403,39 @@
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="section">
-    <div class="container narrow">
-      <p class="eyebrow center">FAQ</p>
-      <h2 class="center">Questions hosts ask us</h2>
-      <details>
-        <summary>Do you manage my Airbnb listing or talk to guests?</summary>
-        <p>No. We're a property care company, not a property manager. You keep full control of your listing, pricing and guest communication. We take care of everything physical: cleaning, linens, supplies and upkeep.</p>
-      </details>
-      <details>
-        <summary>How do you know when to clean?</summary>
-        <p>You share your Airbnb, VRBO or Booking.com calendar link (iCal). New bookings automatically appear in our schedule and a clean is booked for checkout day. You can also add or move cleans manually.</p>
-      </details>
-      <details>
-        <summary>What if a guest damages something?</summary>
-        <p>We photograph every room after checkout and send you a damage report with timestamped photos, which is exactly what Airbnb's AirCover claim process asks for.</p>
-      </details>
-      <details>
-        <summary>Who are your cleaners?</summary>
-        <p>An experienced local team we know and trust personally. Each property gets a main cleaner plus a backup who knows it, so a clean is never missed. Everyone is trained on our checklist, and we carry general liability insurance.</p>
-      </details>
-      <details>
-        <summary>What about same-day turnovers?</summary>
-        <p>They're our bread and butter. With a standard 11 AM checkout and 4 PM check-in, we have plenty of time. Rush cleans with less than 4 hours' notice carry a 25% surcharge.</p>
-      </details>
-      <details>
-        <summary>How does billing work?</summary>
-        <p>One itemized invoice at the end of each month, payable by card or bank transfer. No contracts. Cancel any time with 14 days' notice.</p>
-      </details>
+  <section id="faq" class="section alt">
+    <div class="container faq-grid">
+      <div data-reveal>
+        <p class="eyebrow">FAQ</p>
+        <h2>Questions hosts ask us</h2>
+        <p class="section-lead">Something else? Ask us in the walkthrough form above.</p>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>Do you manage my Airbnb listing or talk to guests?</summary>
+          <p>No. We're a cleaning and property care company, not a property manager. You keep full control of your listing, pricing and guest messages. We take care of everything physical: cleaning, linens, supplies and upkeep.</p>
+        </details>
+        <details>
+          <summary>How do you know when to clean?</summary>
+          <p>You share your Airbnb, VRBO or Booking.com calendar link. New bookings appear in our schedule automatically and a clean is booked for checkout day. You can also add or move cleans yourself.</p>
+        </details>
+        <details>
+          <summary>What if a guest damages something?</summary>
+          <p>We photograph every room after checkout and send you a damage report with timestamped photos, which is the evidence Airbnb's AirCover claim process asks for.</p>
+        </details>
+        <details>
+          <summary>Who are your cleaners?</summary>
+          <p>An experienced local team we know and trust personally. Each property gets a main cleaner plus a backup who knows it, so a clean is never missed. Everyone is trained on our checklist, and we carry general liability insurance.</p>
+        </details>
+        <details>
+          <summary>What about same-day turnovers?</summary>
+          <p>They're most of what we do. With a standard 11 AM checkout and 4 PM check-in there's plenty of time. Cleans booked with less than 4 hours' notice carry a 25% rush fee.</p>
+        </details>
+        <details>
+          <summary>How does billing work?</summary>
+          <p>One itemized invoice at the end of each month, payable by card or bank transfer. No contracts. Cancel any time with 14 days' notice.</p>
+        </details>
+      </div>
     </div>
   </section>
 
@@ -297,7 +443,7 @@
   <section class="cta">
     <div class="container cta-inner">
       <h2>Spend your time on bookings, not bathrooms.</h2>
-      <a href="#quote" class="btn btn-light">Get started</a>
+      <a href="#quote" class="btn btn-light">Get your price</a>
     </div>
   </section>
 </main>
@@ -305,8 +451,8 @@
 <footer class="footer">
   <div class="container footer-grid">
     <div>
-      <a href="#top" class="logo"><span class="logo-mark">✦</span> FreshTurn</a>
-      <p>Cleaning, linens and property care for short-term rental hosts.</p>
+      <a href="#top" class="logo"><svg class="logo-mark"><use href="#logo"/></svg>FreshTurn</a>
+      <p>Cleaning, linens and property care for Airbnb and short-term rental hosts.</p>
     </div>
     <div>
       <h4>Contact</h4>

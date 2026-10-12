@@ -20,4 +20,9 @@ Everything needed to start an Airbnb cleaning business that uses a team of trust
    - **GitHub Pages:** in this repo go to *Settings → Pages*, choose the branch, and save.
 4. **Optional:** buy a domain (e.g. `freshturncleaning.com`, about $15/year) and connect it in Netlify or GitHub Pages settings.
 
+## Adding your own photos and reviews
+
+- **Before/after slider:** it currently shows an illustration. Once you have real photos of a clean (ask the host's permission), make a `photos` folder, add `before.jpg` and `after.jpg` (same size, landscape), and follow the note above the "BEFORE / AFTER" section in `index.html`.
+- **Reviews:** the reviews section is hidden until you have real ones. Paste genuine reviews into the `REVIEWS` section of `index.html` and delete the word `hidden` from `<section id="reviews" ...>`. Never use made-up reviews.
+
 If you change prices, update **both** the pricing table in `index.html` and the `BASE` / `LINENS` numbers in `script.js`.
