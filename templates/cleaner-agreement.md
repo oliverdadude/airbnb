@@ -1,14 +1,15 @@
-# Independent Cleaner Agreement
+# Self-Employed Cleaner Agreement
 
-> Template only, not legal advice. Have a local lawyer review it before use. Fill in everything in [brackets].
+> Template only, not legal advice. Have a solicitor review it before use. Fill in everything in [brackets].
 
-This agreement is between **[FreshTurn Property Care LLC]** ("FreshTurn") and **[Cleaner name]** ("Cleaner"), starting **[date]**.
+This agreement is between **[Your name], trading as FreshTurn Property Care** ("FreshTurn") and **[Cleaner name]** ("Cleaner"), starting **[date]**.
 
 ## 1. Relationship
-1.1 The Cleaner is an independent contractor, not an employee of FreshTurn.
+1.1 The Cleaner is self-employed, not an employee or worker of FreshTurn.
 1.2 The Cleaner may accept or decline any job offered, and is free to work for other clients.
 1.3 The Cleaner provides their own cleaning equipment (vacuum, mop, cloths, etc.). FreshTurn provides consumable products and restock items for client properties.
-1.4 The Cleaner is responsible for their own taxes, and for their own insurance if they have it. FreshTurn will issue tax forms as required by law.
+1.4 The Cleaner is registered as self-employed with HMRC and is responsible for their own Income Tax and National Insurance, and for their own insurance if they have it.
+1.5 If the Cleaner can't do an accepted job, they may send a suitably experienced substitute, provided FreshTurn agrees in advance and the substitute follows this agreement.
 
 ## 2. Jobs
 2.1 FreshTurn offers jobs through [Turno / text message]. Once the Cleaner accepts a job, they must complete it before the guest check-in time shown.
@@ -20,19 +21,19 @@ This agreement is between **[FreshTurn Property Care LLC]** ("FreshTurn") and **
 
 | Property | Pay per clean |
 |---|---|
-| Studio | $[45] |
-| 1 bedroom | $[55] |
-| 2 bedroom | $[70] |
-| 3 bedroom | $[90] |
-| 4+ bedroom | $[110+], agreed per property |
-| Deep clean | [55]% of the price charged |
+| Studio | £[30] |
+| 1 bedroom | £[33] |
+| 2 bedroom | £[40] |
+| 3 bedroom | £[52] |
+| 4+ bedroom | £[65+], agreed per property |
+| Deep clean | [60]% of the price charged |
 | Extra bathroom / rush surcharge | [50]% of the surcharge |
 
-3.2 Payment is made every **[Friday]** for jobs completed in the previous week, by [bank transfer / other].
+3.2 The Cleaner sends FreshTurn a simple invoice (or confirms a job list) each week. Payment is made every **[Friday]** for jobs completed in the previous week, by bank transfer.
 3.3 If a host reports a genuine problem within 24 hours, the Cleaner will return to fix it (if available) at no extra pay. If someone else has to fix it, FreshTurn may deduct a fair amount, agreed with the Cleaner beforehand.
 
 ## 4. Conduct & Confidentiality
-4.1 The Cleaner will keep door codes, keys, client names and addresses, and anything seen in properties strictly confidential.
+4.1 The Cleaner will keep key safe and door codes, keys, client names and addresses, and anything seen in properties strictly confidential.
 4.2 The Cleaner will not bring other people to a property, use the property for anything except the job, or take anything from it.
 4.3 The Cleaner will report any damage, missing items or safety issues to FreshTurn straight away, with photos.
 

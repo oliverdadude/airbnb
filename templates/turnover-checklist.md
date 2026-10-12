@@ -47,7 +47,7 @@ Follow this at every clean, plus the property's own notes. 📸 = photo required
 - [ ] All laundry washed, dried, and either used or folded into the linen cupboard
 - [ ] All bins emptied; rubbish taken to outside bins
 - [ ] Outdoor area tidy (furniture, BBQ, ashtrays); hot tub checked if applicable 📸
-- [ ] Thermostat set to the host's setting; lights off; windows locked
+- [ ] Heating set to the host's setting; lights off; windows locked
 - [ ] Final check against the reference photos
 - [ ] Note supplies running low (for the next visit)
 - [ ] Door locked 📸 (front door)

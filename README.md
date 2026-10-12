@@ -1,4 +1,4 @@
-# FreshTurn: Airbnb Cleaning & Turnover Company
+# FreshTurn: Airbnb Cleaning in Bath
 
 Everything needed to start an Airbnb cleaning business that uses a team of trusted independent cleaners, paid per job. The company cleans properties between guests; it does not manage the Airbnb listings.
 
@@ -18,7 +18,7 @@ Everything needed to start an Airbnb cleaning business that uses a team of trust
 3. **Publish it.** Either option works:
    - **Netlify (easiest):** go to [app.netlify.com/drop](https://app.netlify.com/drop) and drag this folder onto the page. You get a free web address straight away.
    - **GitHub Pages:** in this repo go to *Settings → Pages*, choose the branch, and save.
-4. **Optional:** buy a domain (e.g. `freshturncleaning.com`, about $15/year) and connect it in Netlify or GitHub Pages settings.
+4. **Optional:** buy a domain (e.g. `freshturnbath.co.uk`, about £10–£15/year) and connect it in Netlify or GitHub Pages settings.
 
 ## Adding your own photos and reviews
 

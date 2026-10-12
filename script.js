@@ -84,12 +84,12 @@ if (!reduceMotion && 'IntersectionObserver' in window) {
 }
 
 // Price estimator — keep in sync with the pricing table in index.html
-const BASE = [85, 105, 135, 175, 220];    // studio, 1, 2, 3, 4+ bedrooms
-const LINENS = [20, 25, 40, 55, 70];
-const EXTRA_BATH = 20;                    // per bathroom beyond the first
+const BASE = [45, 50, 60, 80, 100];       // studio, 1, 2, 3, 4+ bedrooms (£)
+const LINENS = [12, 14, 26, 38, 50];
+const EXTRA_BATH = 10;                    // per bathroom beyond the first
 const FULL_CARE_DISCOUNT = 0.05;
 
-const money = n => '$' + Math.round(n).toLocaleString('en-US');
+const money = n => '£' + Math.round(n).toLocaleString('en-GB');
 
 function setValue(el, text) {
   if (el.textContent === text) return;
